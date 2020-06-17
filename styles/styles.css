@@ -1,0 +1,34 @@
+body {
+    background: #062863;
+}
+
+.head {
+    color: lavender;
+}
+
+.img {
+    margin: 40px 0px 50px 0px;
+}
+
+.img .image {
+    width: 7vw;
+    height: initial;
+}
+
+.savings-label {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    color: lavender;
+    border: 1px solid #2194F1;
+    /* height: 7vh; */
+}
+
+.btn-outline-success:hover {
+    background-color: #083E9E;
+}
