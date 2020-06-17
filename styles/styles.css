@@ -26,9 +26,25 @@ body {
 button:not(:disabled) {
     color: lavender;
     border: 1px solid #2194F1;
-    /* height: 7vh; */
 }
 
 .btn-outline-success:hover {
     background-color: #083E9E;
+}
+
+.form-control-sm {
+    width: 220px;
+}
+
+.t {
+    border-radius: 46px;
+    width: 20px;
+    background: #062863;
+    box-shadow: 5px 5px 17px #041d48, -5px -5px 17px #08337e;
+}
+
+.tt {
+    border-radius: 44px;
+    background: #062863;
+    box-shadow: inset 25px 25px 51px #031534, inset -25px -25px 51px #093b92;
 }
