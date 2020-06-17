@@ -22,75 +22,84 @@
             <div class="img">
                 <img class="image" src="./Images/Layer 2.png">
             </div>
-            <div class="row">
-                <div class="col">
-                    <label class="savings-label mb-4"> <strong>Savings Type</strong></label>
 
-                    <div class="savings-btn row">
-                        <button type="button" class="btn btn-sm mx-2 btn-outline-success">Success</button>
-                        <button type="button" class="btn btn-sm mx-2 btn-outline-success">Success</button>
-                        <button type="button" class="btn btn-sm mx-2 btn-outline-success">Success</button>
+            <form id="siForm">
+                <div class="row">
+                    <div class="col">
+                        <label class="savings-label mb-4"> <strong>Savings Type</strong></label>
+
+                        <div class="savings-btn row">
+                            <button type="button" class="btn btn-sm mx-2 btn-outline-success">Success</button>
+                            <button type="button" class="btn btn-sm mx-2 btn-outline-success">Success</button>
+                            <button type="button" class="btn btn-sm mx-2 btn-outline-success">Success</button>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="amount" class="savings-label mt-5"> <strong> Amount</strong></label>
+                            <input id="amount" onkeyup="display()" type="text" class="form-control form-control-sm" required placeholder="Amount">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rate" class="savings-label"> <strong> Interest Rate</strong></label>
+                            <input id="rate" type="text" class="form-control form-control-sm" required placeholder="0.5%">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="term" class="savings-label"> <strong> Term</strong></label>
+                            <input id="term" ^[0-9]*$ type="text" class="form-control form-control-sm" required placeholder="2 years">
+                        </div>
+
+
+
                     </div>
+                    <div class="col tt">
 
-                    <div class="form-group">
-                        <label for="amount" class="savings-label mt-5"> <strong> Amount</strong></label>
-                        <input id="amount" type="text" class="form-control form-control-sm" required placeholder="Amount">
+                        <div class="container p-5">
+                            Pie Chart
+                        </div>
+                        <div class="container pl-5 py-2">
+                            <div class="row">
+                                <div class="col">
+                                    <strong><p>Principal</p></strong>
+
+                                </div>
+                                <div class="col">
+                                    <p id="neu-principal"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container pl-5 py-2">
+                            <div class="row">
+                                <div class="col">
+                                    <strong><p>Interest Payable</p></strong>
+                                </div>
+                                <div class="col">
+                                    <p id="interestpayable"> </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container pl-5 py-2">
+                            <div class="row">
+                                <div class="col">
+                                    <strong><p>Total Amount Payable</p></strong>
+                                </div>
+                                <div class="col">
+                                    <p id="amountpayable"> </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="savings-btn container pl-5 py-3 row">
+                            <button type="button" class="btn btn-sm mx-2 btn-outline-success " onclick="simpleInterest()">Calculate</button>
+                            <button type="button" class="btn btn-sm mx-2 btn-outline-success" onClick="document.getElementById('siForm').reset()">Reset</button>
+
+                        </div>
+
                     </div>
-
-                    <div class="form-group">
-                        <label for="rate" class="savings-label"> <strong> Interest Rate</strong></label>
-                        <input id="rate" type="text" class="form-control form-control-sm" required placeholder="0.5%">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="term" class="savings-label"> <strong> Term</strong></label>
-                        <input id="term" ^[0-9]*$ type="text" class="form-control form-control-sm" required placeholder="2 years">
-                    </div>
-
-
-
                 </div>
-                <div class="col tt">
-
-                    <div class="container p-5">
-                        Pie Chart
-                    </div>
-                    <div class="container pl-5 py-2">
-                        <div class="row">
-                            <div class="col">
-                                <strong><p>Principal</p></strong>
-
-                            </div>
-                            <div class="col">
-                                ₦
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="container pl-5 py-2">
-                        <div class="row">
-                            <div class="col">
-                                <strong><p>Interest Payable</p></strong>
-                            </div>
-                            <div class="col">
-                                ₦
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="container pl-5 py-2">
-                        <div class="row">
-                            <div class="col">
-                                <strong><p>Total Amount Payable</p></strong>
-                            </div>
-                            <div class="col">
-                                ₦
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+            </form>
         </div>
     </section>
 
