@@ -54,6 +54,7 @@ button:not(:disabled) {
     box-shadow: inset 25px 25px 51px #031534, inset -25px -25px 51px #093b92;
     width: 100%;
     height: 100%;
+    margin-top: 30px;
 }
 
 .btn-outline-success:not(:disabled):not(.disabled).active:focus,
