@@ -33,7 +33,11 @@ button:not(:disabled) {
 }
 
 .form-control-sm {
-    width: 252px;
+    width: 100%;
+}
+
+.form-control {
+    height: 6vh;
 }
 
 
@@ -48,4 +52,12 @@ button:not(:disabled) {
     border-radius: 44px;
     background: #062863;
     box-shadow: inset 25px 25px 51px #031534, inset -25px -25px 51px #093b92;
+    width: 100%;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled).active:focus,
+.btn-outline-success:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-success.dropdown-toggle:focus :active {
+    background-color: #093b92;
+    border: none;
 }
